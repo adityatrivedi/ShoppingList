@@ -8,4 +8,8 @@ def add_to_list(item):
   shopping_list.append(item)
   print("Added! List has {} items.".format(len(shopping_list)))
 
+def show_list():
+  print("Here's your list:")
+  for item in shopping_list:
+    print(item)
 
