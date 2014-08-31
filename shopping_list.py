@@ -18,7 +18,8 @@ show_help()
 while True:
     new_item = input("> ")
     if new_item == 'DONE':
-        break
+        show_list();
+        break:
     elif new_item == 'HELP':
         show_help()
         continue
