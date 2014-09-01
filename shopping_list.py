@@ -37,5 +37,5 @@ while True:
     elif new_item == 'SHOW':
         show_list()
         continue
-    add_to_list(new_item)
+    add_to_list(new_item.strip())
     continue
