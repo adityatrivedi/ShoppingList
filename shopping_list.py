@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 shopping_list = []
 
 def show_help():
