@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 shoppingList = []
 
 def show_help():
@@ -15,12 +17,20 @@ def show_list():
     for item in shoppingList:
         print(item)
 
+def save_to_file(textList):
+    outfile = open("./shopping-list.txt", 'w')
+    for item in textList:
+        outfile.write("%s\n" % item)
+    outfile.close
+
+
 show_help()
 
 while True:
     new_item = input("> ")
     if new_item == 'DONE':
         show_list();
+        save_to_file(shoppingList);
         break
     elif new_item == 'HELP':
         show_help()
