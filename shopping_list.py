@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 
-shopping_list = []
+shoppingList = []
 
 def show_help():
     print("What should we pick up at the store?")
     print("Enter DONE to stop. Enter HELP for this help. Enter SHOW to see your current list.")
 
 def add_to_list(item):
-    shopping_list.append(item)
-    print("Added! List has {} items.".format(len(shopping_list)))
+    shoppingList.append(item)
+    print("Added! List has {} items.".format(len(shoppingList)))
 
 def show_list():
     print("Here's your list:")
-    for item in shopping_list:
+    for item in shoppingList:
         print(item)
 
 show_help()
